@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #d6d6d6, rgb(63, 63, 63));
+    border-bottom: 1px solid #d6d6d6;
+    padding: 0;
+}
+
+.logout-btn, .btn-see-purchases {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.logout-btn:hover, .back-btn:hover, .btn-see-purchases:hover {
+    outline: 1px solid #09f;
+    transition: ease-in-out;
+}
+
+.info-sect {
+    margin: 40px 0;
+    border-bottom: 1px solid #999999;
+}
+
+.delete-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.delete-btn:hover {
+    outline: 1px solid rgb(255, 0, 0);
+    background-color: white;
+    color: red;
+    transition: ease-in-out;
+}

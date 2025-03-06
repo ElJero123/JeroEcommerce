@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", serif;
+  height: 100vh;
+  background-color: #d6d6d6;
+}
+
+input, textarea {
+  font-family: 'Montserrat', serif;
+}
+
+button, input, textarea {
+  cursor: pointer;
+}

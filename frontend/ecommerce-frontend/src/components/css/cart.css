@@ -1,0 +1,23 @@
+.cart-info {
+    padding-left: 20px;
+}
+
+.btn-buy-cart {
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 0px;
+    outline: none;
+    transition: ease-in-out;
+}
+
+.btn-buy-cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-buy-cart:hover {
+    outline: 1px solid #09f;
+}

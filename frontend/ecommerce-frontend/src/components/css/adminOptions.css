@@ -1,0 +1,60 @@
+.form-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: start;
+}
+
+.form-admin input {
+    width: 450px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: ease-in-out;
+}
+
+.form-admin button {
+    padding: 5px;
+    width: 450px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-admin label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-admin button:hover {
+    outline: 1px solid #09f;
+}
+
+.form-admin input:focus, input:hover {
+    outline: 1px solid #09f;
+}
+
+@media screen and (max-width: 500px) {
+    .form-admin input {
+        width: 300px;
+    }
+
+    .form-admin button {
+        width: 300px;
+    }
+}
+
+.btn-redirect-purchases {
+    padding: 10px 7px;
+    border: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+.btn-redirect-purchases:hover {
+    outline: 1px solid #09f;
+}

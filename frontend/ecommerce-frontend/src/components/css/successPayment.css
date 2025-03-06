@@ -1,0 +1,28 @@
+main {
+    width: 100%;
+}
+
+.alert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+.info-container .success {
+    background-color: rgb(46, 216, 30);
+    padding: 20px;
+    border-radius: 50%;
+}

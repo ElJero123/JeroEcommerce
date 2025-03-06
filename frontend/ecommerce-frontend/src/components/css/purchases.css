@@ -1,0 +1,115 @@
+.general-purchases-table {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+.general-purchases-table table {
+    min-width: 600px;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    max-width: 300px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.general-purchases-table table td .is-pending-purchase {
+    background-color: rgb(241, 226, 15);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+}
+
+.general-purchases-table table td .is-pending-purchase:hover {
+    background-color: transparent;
+    outline: 1px solid rgb(241, 226, 15);
+    color: rgb(255, 247, 0);
+    transition: ease-in-out;
+}
+
+.general-purchases-table table td .is-received-purchase {
+    background-color: rgb(102, 241, 15);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+}
+
+.general-purchases-table table td .is-received-purchase:hover {
+    background-color: transparent;
+    outline: 1px solid rgb(98, 241, 15);
+    color: rgb(51, 236, 0);
+    transition: ease-in-out;
+}
+
+.general-purchases-table table td .btn-delete-purchase {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.general-purchases-table table td .btn-delete-purchase:hover {
+    background-color: transparent;
+    outline: 1px solid #f44336;
+    color: #f44336;
+    transition: ease-in-out;
+}
+
+.general-purchases-table table td .btn-check-purchase {
+    margin: 0 0 5px 0;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: chartreuse;
+    transition: ease-in-out;
+}
+
+.general-purchases-table table td .btn-check-purchase:hover {
+    background-color: transparent;
+    outline: 1px solid chartreuse;
+    color: rgb(207, 255, 94);
+    transition: ease-in-out;
+}
+
+.filtering-table {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px 5px 0;
+}
+
+.filtering-table select {
+    appearance: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    transition: ease-in-out;
+}
+
+.filtering-table select:focus {
+    outline: 1px solid #09f;
+}
+
+.filtering-table select:hover {
+    outline: 1px solid #09f;
+}
