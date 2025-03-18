@@ -26,8 +26,6 @@ export const Logged = () => {
         })
     }, [])
 
-    console.log('a')
-
     const handleAddToCart = (product_id: number) => {    
         fetch(`${VITE_API_LINK}/add-to-cart`, {
             method: 'POST',
