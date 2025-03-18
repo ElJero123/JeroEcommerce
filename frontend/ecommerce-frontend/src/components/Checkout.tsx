@@ -31,6 +31,8 @@ export function Checkout () {
             })
     }, [id])
 
+    console.log('A')
+
     const handlePayment = () => {
         const prouductToBuy = product ?? []
         fetch(`${VITE_API_LINK}/checkout-session`, {
