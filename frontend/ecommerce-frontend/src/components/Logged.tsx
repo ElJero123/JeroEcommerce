@@ -12,6 +12,7 @@ import { toast } from 'sonner'
 
 export const Logged = () => {
     const [products, setProducts] = useState<Product[] | undefined>([])
+    const [isLoading, setIsLoading] = useState(true)
     const navigate = useNavigate()
     const username = Cookies.get('username')
     const userRole = Cookies.get('userRole')
@@ -20,6 +21,7 @@ export const Logged = () => {
         fetch(`${VITE_API_LINK}/products`)
         .then(res => res.json())
         .then(data => {
+            setIsLoading(false)
             setProducts(data.products)
         })
     }, [])
@@ -80,18 +82,19 @@ export const Logged = () => {
             </div>
             {userRole === 'admin' &&
                 <section className='add-product-btn'>
-                    <button onClick={() => navigate('/add-product')}>Añadir producto +</button>
+                    <button onClick={() => navigate('/add-product')}>Añadir producto + {}</button>
                 </section>  
             }
             
             <section className='products'>
                 <ul className='list-products'>
-                { products?.length === 0 && <h1>No hay productos a la venta</h1> }
-                    {products?.map(product => (
+                    {isLoading && <div>Cargando...</div>}
+                    {products?.length === 0 && !isLoading && <h1>No hay productos a la venta</h1>}
+                    {!isLoading && products?.map(product => (
                         <li key={product.product_id}>
                             <img src={product.url_img} alt={product.name} />
                             <div className="info-product">
-                               <p><u>{product.name}</u></p>
+                                <p><u>{product.name}</u></p>
                                 <p>precio: <b>${product.price}</b></p>
                                 <p>En existencia: {product.stock}</p>
                                 {userRole === 'admin' && <p>ID: {product.product_id}</p>}
@@ -102,7 +105,7 @@ export const Logged = () => {
                                 </div>
                             </div>
                         </li>
-                    ))}
+                    ))}  
                 </ul>
             </section>
         </main>
